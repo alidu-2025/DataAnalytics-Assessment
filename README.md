@@ -31,9 +31,10 @@ This simplified CLV model is based on average profit per transaction (0.1% of tr
 
 ## 🚧 Challenges
 
-- Ensuring accurate time-based calculations using DATE_PART and DATE_TRUNC.
-- Handling division-by-zero in CLV where tenure was zero.
-- Aggregating across multiple tables with consistent field naming.
+- Handling division-by-zero (tenure = 0) in CLV estimation
+- Aggregating transaction data across both account types with consistent formats
+- Working with monetary values stored in kobo (needed conversion to Naira)
+- Building reusable subqueries for frequency and CLV efficiently
 
 ---
 
